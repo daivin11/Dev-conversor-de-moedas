@@ -1,0 +1,171 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+ } 
+
+    body{
+        background-color: #8a3d6c;
+        background: url(assets/money.png) no-repeat center center fixed;
+        background-size: cover;
+        text-align: center;
+        
+       
+    }
+
+    .img-logo{
+        width: 300px;
+        margin: 20px auto;
+        display: block;
+        
+    }
+    
+main{
+    background-color: white;
+    width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+    
+    h1{
+        font-family: 'Oswald', sans-serif;
+        font-weight: 700;
+        color: #8a3d6c;
+        margin-bottom: 20px;
+    }
+
+    label{
+        font-size: 20px;
+        color: #8a3d6c;
+        font-weight: 500;
+    }
+
+    select, input{
+        
+        height: 48px;
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        padding: 5px;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 24px;
+    }
+
+    button{
+        background-color: #8a3d6c;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        
+    }
+
+    button:hover{
+        background-color: #732d57;
+    }
+
+  
+
+    section{
+        margin-top: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+
+    .arrow{
+      
+        margin: 20px 0;
+    }
+    .currency-box{
+        display: flex
+       flex-direction: column;
+       align-items: center;
+       gap: 4px;
+    }
+
+.currency{
+        color: #777777;
+        font-size: 14px;
+    }
+
+
+    .currency-value, .currency-value-to-convert{
+        font-weight: 700;
+        font-size: 18px;
+        color: #555555;
+    }
+
+
+   
+/* Fundo com moedas caindo */
+.coin-rain {
+  position: ;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0; /* fica atrás da logo */
+}
+
+/* Cada moeda */
+.coin {
+  position: absolute;
+  top: -100px;
+  width: 40px;
+  height: 40px;
+  background-image: url("assets/moeda.png"); /* coloque uma imagem de moeda dourada aqui */
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  animation: fall 8s linear infinite;
+}
+
+/* Faz várias moedas em posições e tempos diferentes */
+.coin:nth-child(1) { left: 10%; animation-delay: 0s; }
+.coin:nth-child(2) { left: 30%; animation-delay: 2s; }
+.coin:nth-child(3) { left: 50%; animation-delay: 4s; }
+.coin:nth-child(4) { left: 70%; animation-delay: 1s; }
+.coin:nth-child(5) { left: 85%; animation-delay: 3s; }
+.coin:nth-child(6) { left: 95%; animation-delay: 5s; }
+
+/* Animação de queda */
+@keyframes fall {
+  0% {
+    transform: translateY(-100px) rotate(0deg);
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0.3;
+  }
+}
+
+/* Logo fica acima da animação */
+.img-logo {
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin: 0 auto;
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Mesma flutuação suave da logo */
+@keyframes float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
