@@ -65,8 +65,8 @@ Ideal para praticar manipulação do DOM, uso de condicionais e formatação mon
 
 1. **Baixe ou clone** este repositório:
    ```bash
-   git clone https://github.com/daivin11/dev-conversor-de-moedas.git
-
+   git clone https://daivin11.github.io/Dev-conversor-de-moedas/
+   
 
 Abra o projeto no VS Code.
 
@@ -109,5 +109,3 @@ Design e animações CSS desenvolvidos manualmente.
 
 David Soares
 💼 Projeto desenvolvido para estudos de JavaScript e manipulação de DOM.
-📧 Contato: daivinsoares11@gmail.com
-🌐 GitHub: @daivin11
