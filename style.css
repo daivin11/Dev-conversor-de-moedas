@@ -6,8 +6,8 @@
  } 
 
     body{
-        background-color: #8a3d6c;
-        background: url(assets/money.png) no-repeat center center fixed;
+        background-color: #5a5a5a;
+      
         background-size: cover;
         text-align: center;
         
@@ -106,66 +106,4 @@ main{
 
 
    
-/* Fundo com moedas caindo */
-.coin-rain {
-  position: ;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  z-index: 0; /* fica atrás da logo */
-}
-
-/* Cada moeda */
-.coin {
-  position: absolute;
-  top: -100px;
-  width: 40px;
-  height: 40px;
-  background-image: url("assets/moeda.png"); /* coloque uma imagem de moeda dourada aqui */
-  background-size: contain;
-  background-repeat: no-repeat;
-  opacity: 0.9;
-  animation: fall 8s linear infinite;
-}
-
-/* Faz várias moedas em posições e tempos diferentes */
-.coin:nth-child(1) { left: 10%; animation-delay: 0s; }
-.coin:nth-child(2) { left: 30%; animation-delay: 2s; }
-.coin:nth-child(3) { left: 50%; animation-delay: 4s; }
-.coin:nth-child(4) { left: 70%; animation-delay: 1s; }
-.coin:nth-child(5) { left: 85%; animation-delay: 3s; }
-.coin:nth-child(6) { left: 95%; animation-delay: 5s; }
-
-/* Animação de queda */
-@keyframes fall {
-  0% {
-    transform: translateY(-100px) rotate(0deg);
-    opacity: 0.8;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(100vh) rotate(360deg);
-    opacity: 0.3;
-  }
-}
-
-/* Logo fica acima da animação */
-.img-logo {
-  position: relative;
-  z-index: 1;
-  display: block;
-  margin: 0 auto;
-  animation: float 6s ease-in-out infinite;
-}
-
-/* Mesma flutuação suave da logo */
-@keyframes float {
-  0%   { transform: translateY(0); }
-  50%  { transform: translateY(-8px); }
-  100% { transform: translateY(0); }
-}
-
+    
